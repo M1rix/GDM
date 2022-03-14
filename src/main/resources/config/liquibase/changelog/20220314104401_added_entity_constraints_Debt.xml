@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <!--
+        Added the constraints for entity Debt.
+    -->
+    <changeSet id="20220314104401-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="profile_id"
+                                 baseTableName="apex_debt"
+                                 constraintName="fk_apex_debt__profile_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="apex_profile"/>
+
+        <addForeignKeyConstraint baseColumnNames="currency_id"
+                                 baseTableName="apex_debt"
+                                 constraintName="fk_apex_debt__currency_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="apex_currency"/>
+    </changeSet>
+</databaseChangeLog>

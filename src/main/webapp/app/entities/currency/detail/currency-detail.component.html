@@ -1,0 +1,60 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="currency">
+      <h2 data-cy="currencyDetailsHeading"><span jhiTranslate="gdmApp.currency.detail.title">Currency</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ currency.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="gdmApp.currency.code">Code</span></dt>
+        <dd>
+          <span>{{ currency.code }}</span>
+        </dd>
+        <dt><span jhiTranslate="gdmApp.currency.countryFlag">Country Flag</span></dt>
+        <dd>
+          <span>{{ currency.countryFlag }}</span>
+        </dd>
+        <dt><span jhiTranslate="gdmApp.currency.position">Position</span></dt>
+        <dd>
+          <span>{{ currency.position }}</span>
+        </dd>
+        <dt><span jhiTranslate="gdmApp.currency.status">Status</span></dt>
+        <dd>
+          <span jhiTranslate="{{ 'gdmApp.CurrencyStatus.' + currency.status }}">{{ currency.status }}</span>
+        </dd>
+        <dt><span jhiTranslate="gdmApp.currency.createdBy">Created By</span></dt>
+        <dd>
+          <span>{{ currency.createdBy }}</span>
+        </dd>
+        <dt><span jhiTranslate="gdmApp.currency.createdDate">Created Date</span></dt>
+        <dd>
+          <span>{{ currency.createdDate | formatMediumDatetime }}</span>
+        </dd>
+        <dt><span jhiTranslate="gdmApp.currency.lastModifiedBy">Last Modified By</span></dt>
+        <dd>
+          <span>{{ currency.lastModifiedBy }}</span>
+        </dd>
+        <dt><span jhiTranslate="gdmApp.currency.lastModifiedDate">Last Modified Date</span></dt>
+        <dd>
+          <span>{{ currency.lastModifiedDate | formatMediumDatetime }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/currency', currency.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

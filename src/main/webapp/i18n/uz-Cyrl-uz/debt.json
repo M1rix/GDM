@@ -1,0 +1,34 @@
+{
+  "gdmApp": {
+    "debt": {
+      "home": {
+        "title": "Debts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Янги Debt қўшиш",
+        "createOrEditLabel": "Debtни таҳрирлаш",
+        "notFound": "No Debts found"
+      },
+      "created": "Debt {{ param }} билан қўшилди.",
+      "updated": "{{ param }}- Debt сақланди.",
+      "deleted": "{{ param }}- Debt ўчирилди.",
+      "delete": {
+        "question": "{{ id }}- Debtни ўчирмоқчимисиз? "
+      },
+      "detail": {
+        "title": "Debt"
+      },
+      "id": "ID",
+      "amount": "Amount",
+      "status": "Status",
+      "dueDate": "Due Date",
+      "description": "Description",
+      "debtScore": "Debt Score",
+      "createdBy": "Created By",
+      "createdDate": "Created Date",
+      "lastModifiedBy": "Last Modified By",
+      "lastModifiedDate": "Last Modified Date",
+      "profile": "Profile",
+      "currency": "Currency"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "gdmApp": {
+    "currency": {
+      "home": {
+        "title": "Currencies",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Currency",
+        "createOrEditLabel": "Create or edit a Currency",
+        "notFound": "No Currencies found"
+      },
+      "created": "A new Currency is created with identifier {{ param }}",
+      "updated": "A Currency is updated with identifier {{ param }}",
+      "deleted": "A Currency is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Currency {{ id }}?"
+      },
+      "detail": {
+        "title": "Currency"
+      },
+      "id": "ID",
+      "code": "Code",
+      "countryFlag": "Country Flag",
+      "position": "Position",
+      "status": "Status",
+      "createdBy": "Created By",
+      "createdDate": "Created Date",
+      "lastModifiedBy": "Last Modified By",
+      "lastModifiedDate": "Last Modified Date",
+      "debt": "Debt"
+    }
+  }
+}

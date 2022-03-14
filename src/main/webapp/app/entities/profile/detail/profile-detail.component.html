@@ -1,0 +1,80 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="profile">
+      <h2 data-cy="profileDetailsHeading"><span jhiTranslate="gdmApp.profile.detail.title">Profile</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ profile.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="gdmApp.profile.passport">Passport</span></dt>
+        <dd>
+          <span>{{ profile.passport }}</span>
+        </dd>
+        <dt><span jhiTranslate="gdmApp.profile.jshshir">Jshshir</span></dt>
+        <dd>
+          <span>{{ profile.jshshir }}</span>
+        </dd>
+        <dt><span jhiTranslate="gdmApp.profile.inn">Inn</span></dt>
+        <dd>
+          <span>{{ profile.inn }}</span>
+        </dd>
+        <dt><span jhiTranslate="gdmApp.profile.phone">Phone</span></dt>
+        <dd>
+          <span>{{ profile.phone }}</span>
+        </dd>
+        <dt><span jhiTranslate="gdmApp.profile.accessToken">Access Token</span></dt>
+        <dd>
+          <span>{{ profile.accessToken }}</span>
+        </dd>
+        <dt><span jhiTranslate="gdmApp.profile.firstName">First Name</span></dt>
+        <dd>
+          <span>{{ profile.firstName }}</span>
+        </dd>
+        <dt><span jhiTranslate="gdmApp.profile.lastName">Last Name</span></dt>
+        <dd>
+          <span>{{ profile.lastName }}</span>
+        </dd>
+        <dt><span jhiTranslate="gdmApp.profile.score">Score</span></dt>
+        <dd>
+          <span>{{ profile.score }}</span>
+        </dd>
+        <dt><span jhiTranslate="gdmApp.profile.status">Status</span></dt>
+        <dd>
+          <span jhiTranslate="{{ 'gdmApp.ProfileStatus.' + profile.status }}">{{ profile.status }}</span>
+        </dd>
+        <dt><span jhiTranslate="gdmApp.profile.createdBy">Created By</span></dt>
+        <dd>
+          <span>{{ profile.createdBy }}</span>
+        </dd>
+        <dt><span jhiTranslate="gdmApp.profile.createdDate">Created Date</span></dt>
+        <dd>
+          <span>{{ profile.createdDate | formatMediumDatetime }}</span>
+        </dd>
+        <dt><span jhiTranslate="gdmApp.profile.lastModifiedBy">Last Modified By</span></dt>
+        <dd>
+          <span>{{ profile.lastModifiedBy }}</span>
+        </dd>
+        <dt><span jhiTranslate="gdmApp.profile.lastModifiedDate">Last Modified Date</span></dt>
+        <dd>
+          <span>{{ profile.lastModifiedDate | formatMediumDatetime }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/profile', profile.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+{
+  "gdmApp": {
+    "textLocalization": {
+      "home": {
+        "title": "Text Localizations",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Янги Text Localization қўшиш",
+        "createOrEditLabel": "Text Localizationни таҳрирлаш",
+        "notFound": "No Text Localizations found"
+      },
+      "created": "Text Localization {{ param }} билан қўшилди.",
+      "updated": "{{ param }}- Text Localization сақланди.",
+      "deleted": "{{ param }}- Text Localization ўчирилди.",
+      "delete": {
+        "question": "{{ id }}- Text Localizationни ўчирмоқчимисиз? "
+      },
+      "detail": {
+        "title": "Text Localization"
+      },
+      "id": "ID",
+      "code": "Code",
+      "message": "Message",
+      "locale": "Locale",
+      "createdBy": "Created By",
+      "createdDate": "Created Date",
+      "lastModifiedBy": "Last Modified By",
+      "lastModifiedDate": "Last Modified Date"
+    }
+  }
+}

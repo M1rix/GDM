@@ -1,0 +1,30 @@
+{
+  "gdmApp": {
+    "textLocalization": {
+      "home": {
+        "title": "Text Localizations",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Text Localization",
+        "createOrEditLabel": "Создать или отредактировать Text Localization",
+        "notFound": "Text Localizations не найдено"
+      },
+      "created": "Новый Text Localization создан с идентификатором {{ param }}",
+      "updated": "Text Localization обновлен с идентификатором {{ param }}",
+      "deleted": "Text Localization удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Text Localization {{ id }}?"
+      },
+      "detail": {
+        "title": "Text Localization"
+      },
+      "id": "ID",
+      "code": "Code",
+      "message": "Message",
+      "locale": "Locale",
+      "createdBy": "Created By",
+      "createdDate": "Created Date",
+      "lastModifiedBy": "Last Modified By",
+      "lastModifiedDate": "Last Modified Date"
+    }
+  }
+}

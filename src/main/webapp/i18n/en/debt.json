@@ -1,0 +1,34 @@
+{
+  "gdmApp": {
+    "debt": {
+      "home": {
+        "title": "Debts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Debt",
+        "createOrEditLabel": "Create or edit a Debt",
+        "notFound": "No Debts found"
+      },
+      "created": "A new Debt is created with identifier {{ param }}",
+      "updated": "A Debt is updated with identifier {{ param }}",
+      "deleted": "A Debt is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Debt {{ id }}?"
+      },
+      "detail": {
+        "title": "Debt"
+      },
+      "id": "ID",
+      "amount": "Amount",
+      "status": "Status",
+      "dueDate": "Due Date",
+      "description": "Description",
+      "debtScore": "Debt Score",
+      "createdBy": "Created By",
+      "createdDate": "Created Date",
+      "lastModifiedBy": "Last Modified By",
+      "lastModifiedDate": "Last Modified Date",
+      "profile": "Profile",
+      "currency": "Currency"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "gdmApp": {
+    "DebtStatus": {
+      "null": "",
+      "ONGOING": "ONGOING",
+      "PAID_OFF": "PAID_OFF"
+    }
+  }
+}

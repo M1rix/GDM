@@ -1,0 +1,9 @@
+{
+  "gdmApp": {
+    "CurrencyStatus": {
+      "null": "",
+      "ACTIVE": "ACTIVE",
+      "INACTIVE": "INACTIVE"
+    }
+  }
+}

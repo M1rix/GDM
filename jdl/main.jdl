@@ -1,0 +1,73 @@
+entity Profile (apex_profile){
+	passport String maxlength(12) unique
+    jshshir String maxlength(12) unique
+    inn String maxlength(15) unique
+    phone String minlength(12) maxlength(23) unique
+    accessToken String required minlength(32) maxlength(255) unique
+    firstName String maxlength(50)
+    lastName String maxlength(50)
+    score Double min(0) max(10)
+    status ProfileStatus required
+	createdBy String maxlength(50) required
+	createdDate Instant required
+	lastModifiedBy String maxlength(50)
+	lastModifiedDate Instant
+}
+
+entity Debt (apex_debt){
+	amount BigDecimal required
+    status DebtStatus required
+    dueDate Instant required
+    description String maxlength(255)
+    debtScore Integer min(0) max(10)
+    createdBy String maxlength(50) required
+	createdDate Instant required
+	lastModifiedBy String maxlength(50)
+	lastModifiedDate Instant
+}
+
+entity Currency (apex_currency){
+    code String required maxlength(3)
+    countryFlag String required
+    position Integer
+    status CurrencyStatus required
+    createdBy String maxlength(50) required
+	createdDate Instant required
+	lastModifiedBy String maxlength(50)
+	lastModifiedDate Instant
+}
+
+entity TextLocalization(apex_text_localization) {
+ 	code String maxlength(150) required
+  	message String maxlength(150) required
+  	locale String maxlength(2) minlength(2) required
+    createdBy String maxlength(50) required
+	createdDate Instant required
+	lastModifiedBy String maxlength(50)
+	lastModifiedDate Instant
+}
+
+enum ProfileStatus{
+	ACTIVE
+    INACTIVE
+}
+
+enum CurrencyStatus{
+	ACTIVE
+    INACTIVE
+}
+
+enum DebtStatus {
+    ONGOING
+    PAID_OFF
+}
+
+relationship ManyToOne{
+	Debt to Profile
+    Debt to Currency
+}
+
+dto * with mapstruct
+service * with serviceClass
+paginate * with pagination
+filter * except Currency

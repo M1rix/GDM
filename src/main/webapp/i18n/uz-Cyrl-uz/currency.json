@@ -1,0 +1,32 @@
+{
+  "gdmApp": {
+    "currency": {
+      "home": {
+        "title": "Currencies",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Янги Currency қўшиш",
+        "createOrEditLabel": "Currencyни таҳрирлаш",
+        "notFound": "No Currencies found"
+      },
+      "created": "Currency {{ param }} билан қўшилди.",
+      "updated": "{{ param }}- Currency сақланди.",
+      "deleted": "{{ param }}- Currency ўчирилди.",
+      "delete": {
+        "question": "{{ id }}- Currencyни ўчирмоқчимисиз? "
+      },
+      "detail": {
+        "title": "Currency"
+      },
+      "id": "ID",
+      "code": "Code",
+      "countryFlag": "Country Flag",
+      "position": "Position",
+      "status": "Status",
+      "createdBy": "Created By",
+      "createdDate": "Created Date",
+      "lastModifiedBy": "Last Modified By",
+      "lastModifiedDate": "Last Modified Date",
+      "debt": "Debt"
+    }
+  }
+}
